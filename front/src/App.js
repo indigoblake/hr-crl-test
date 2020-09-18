@@ -1,29 +1,32 @@
-import React from 'react';
-import Content from './Content';
-
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-
+import React from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import MainNav from './elements/MainNav'
+import SideNav from './elements/SideNav'
+import Footer from './elements/Footer'
+import Dashboard from './components/Dashboard'
+import Entries from './components/Entries'
+import Profile from './components/Profile'
+import './sass/Main.scss'
 
 function App() {
   return (
-    <div className="App">
-      <div className="row">
-          <div className="row">
-              <div className="col">                
-                <nav class="nav flex-column">
-                    <a class="nav-link active">Active</a>
-                    <a class="nav-link">Link</a>
-                    <a class="nav-link">Link</a>
-                    <a class="nav-link disabled">Disabled</a>
-                </nav>
-              </div>
+    <BrowserRouter>
+      <MainNav />
+      <progress className="progress is-small is-square is-info"></progress>
+      <div className="container is-fluid">
+        <div className="columns is-variable is-3">
+          <div className="column is-narrow">
+            <SideNav />
           </div>
-        <div className="col">
-            <Content />
+          <div className="column">
+            <Route exact path="/" component={ Dashboard } />
+            <Route path="/entries" component={ Entries } />
+            <Route path="/profile" component={ Profile } />
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
