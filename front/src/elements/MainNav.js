@@ -22,10 +22,6 @@ const MainNav = () => {
               Home
             </a>
 
-            <a className="navbar-item">
-              Documentation
-            </a>
-
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
                 More

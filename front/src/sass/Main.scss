@@ -3,9 +3,14 @@
 @import './BulmaOverridesPre.scss';
 @import './node_modules/bulma/bulma.sass';
 @import './BulmaOverridesPost.scss';
+
+
+
 body {
-    background-color: $white-ter;
+    background-color: $color-blueish;
 }
+.h-100 {height: 100%;}
+
 .is-square {border-radius: 0}
 
 

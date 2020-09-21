@@ -11,20 +11,22 @@ import './sass/Main.scss'
 function App() {
   return (
     <BrowserRouter>
+      <progress className="progress mb-0 is-small is-square is-info"></progress>
       <MainNav />
-      <progress className="progress is-small is-square is-info"></progress>
-      <div className="container is-fluid">
-        <div className="columns is-variable is-3">
+        <div className="columns is-gapless">
           <div className="column is-narrow">
             <SideNav />
           </div>
           <div className="column">
-            <Route exact path="/" component={ Dashboard } />
-            <Route path="/entries" component={ Entries } />
-            <Route path="/profile" component={ Profile } />
+            <section className="section">
+              <Route exact path="/" component={ Dashboard } />
+              <Route path="/entries" component={ Entries } />
+              <Route path="/profile" component={ Profile } />
+            </section>
+
           </div>
         </div>
-      </div>
+
       <Footer />
     </BrowserRouter>
   );
