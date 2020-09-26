@@ -6,8 +6,7 @@ export const MainNav = () => {
     <div className="container is-fluid">
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-        <p class="title is-4">Title 1</p>
-
+        <p className="title is-4">Title 1</p>
 
           <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -41,8 +40,8 @@ export const MainNav = () => {
 
           <div className="navbar-end">
             <div className="navbar-item">
-              <span class="icon is-medium">
-                <i class="far fa-bell fa-lg"></i>
+              <span className="icon is-medium">
+                <i className="far fa-bell fa-lg"></i>
               </span>
             </div>
           </div>

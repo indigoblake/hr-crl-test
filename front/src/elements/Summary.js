@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../contexts/UserContext';
 
 export const Summary = () => {
+  const { users } = useContext(UserContext);
   return (
     <div className="box">
       <nav className="level">
@@ -19,7 +21,7 @@ export const Summary = () => {
         <div className="level-item has-text-centered">
           <div>
             <p className="heading">Not synced users</p>
-            <p className="title">0</p>
+            <p className="title">{ users.length }</p>
           </div>
         </div>
         <div className="level-item has-text-centered">

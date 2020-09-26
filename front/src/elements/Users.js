@@ -6,10 +6,10 @@ export const Users = () => {
   const { users } = useContext(UserContext);
   return (
     <>
-      <p class="title is-3">
+      <p className="title is-3">
           Entries
       </p>
-      <p class="subtitle is-5">
+      <p className="subtitle is-5">
           Sample data from third party source
       </p>
       <div className="box">
