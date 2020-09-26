@@ -3,16 +3,16 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import { Login } from './components/onboarding/Login'
 import { Admin } from './components/admin/Admin'
-import { UserContext, UserContextProvider } from './contexts/UserContext'
+import { EmployeeContext, EmployeeContextProvider } from './contexts/EmployeeContext'
 import './sass/main.scss'
 
 // TODO: move routing to a separate file
 function App() {
   return (
     <BrowserRouter>
-      <UserContextProvider>
+      <EmployeeContextProvider>
         <Route path="/admin" component={ Admin } />
-      </UserContextProvider>
+      </EmployeeContextProvider>
       <Route path="/login" component={ Login } />
     </BrowserRouter>
   );

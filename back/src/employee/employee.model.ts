@@ -1,4 +1,4 @@
-export class User {
+export class EmployeeModel {
   constructor(
     public id: number,
     public name: string,

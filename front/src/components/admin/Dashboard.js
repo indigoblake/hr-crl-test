@@ -1,18 +1,18 @@
 import React, { useEffect, useContext } from 'react'
 import { Summary } from '../../elements/Summary'
-import { Users } from '../../elements/Users'
-import { UserContext } from '../../contexts/UserContext'
+import { Employees } from '../../elements/Employees'
+import { EmployeeContext } from '../../contexts/EmployeeContext'
 
 
 export const Dashboard = () => {
-  const { updateUsers } = useContext(UserContext);
+  const { updateEmployees } = useContext(EmployeeContext);
   useEffect(() => {
-    fetch('http://localhost:5000/api/users/tp')
+    fetch('http://localhost:5000/api/employees/tp')
       .then(res => res.json())
       .then(
         (result) => {
           //console.log(result)
-          updateUserContext(result);
+          updateEmployeeContext(result);
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
@@ -23,8 +23,8 @@ export const Dashboard = () => {
       )
   })
 
-  const updateUserContext = (result) => {
-    updateUsers(result);
+  const updateEmployeeContext = (result) => {
+    updateEmployees(result);
   }
   return (
     <>
@@ -41,7 +41,7 @@ export const Dashboard = () => {
         </div>
       </section>
       <Summary />
-      <Users />
+      <Employees />
     </>
   );
 }

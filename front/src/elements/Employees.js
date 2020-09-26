@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { UserContext } from '../contexts/UserContext'
-import { UsersTable } from './UsersTable'
+import { EmployeeContext } from '../contexts/EmployeeContext'
+import { EmployeesTable } from './EmployeesTable'
 
-export const Users = () => {
-  const { users } = useContext(UserContext);
+export const Employees = () => {
+  const { employees } = useContext(EmployeeContext);
   return (
     <>
       <p className="title is-3">
@@ -13,7 +13,7 @@ export const Users = () => {
           Sample data from third party source
       </p>
       <div className="box">
-        <UsersTable users={ users } />
+        <EmployeesTable employees={ employees } />
       </div>
     </>
   );

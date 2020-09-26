@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const UsersTable = ({users}) => {
+export const EmployeesTable = ({employees}) => {
   return (
     <table className="table w-100">
       <thead>
@@ -14,13 +14,13 @@ export const UsersTable = ({users}) => {
         </tr>
       </thead>
       <tbody>
-        {users.map(user => {
+        {employees.map(employee => {
           return (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.company.name}</td>
+            <tr key={employee.id}>
+              <td>{employee.id}</td>
+              <td>{employee.name}</td>
+              <td>{employee.email}</td>
+              <td>{employee.company.name}</td>
               <td></td>
               <td className="has-text-right">
                 <button className="button is-small is-primary">

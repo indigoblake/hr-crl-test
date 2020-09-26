@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { UserContext } from '../contexts/UserContext';
+import { EmployeeContext } from '../contexts/EmployeeContext';
 
 export const Summary = () => {
-  const { users } = useContext(UserContext);
+  const { employees } = useContext(EmployeeContext);
   return (
     <div className="columns">
       <div className="column">
@@ -28,8 +28,8 @@ export const Summary = () => {
       </div>
       <div className="column">
         <div className="box is-gradient-main has-text-white">
-          <p className="heading">Not Synced Users</p>
-          <p className="title has-text-white">{ users.length }</p>
+          <p className="heading">Not Synced employees</p>
+          <p className="title has-text-white">{ employees.length }</p>
         </div>
       </div>
       <div className="column">
