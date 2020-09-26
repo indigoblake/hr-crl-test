@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
@@ -10,8 +10,6 @@ const Footer = () => {
           is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
         </p>
       </div>
-    </footer>    
+    </footer>
   );
 }
-
-export default Footer;
