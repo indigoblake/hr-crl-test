@@ -9,13 +9,13 @@ export const SideNav = () => {
         </p>
       <ul className="menu-list">
         <li>
-          <NavLink to="/">Dashboard</NavLink>
+          <NavLink to="/admin">Dashboard</NavLink>
         </li>
         <li>
-          <NavLink to="/entries">Entries</NavLink>
+          <NavLink to="/admin">Entries</NavLink>
         </li>
         <li>
-          <NavLink to="/profile">Profile</NavLink>
+          <NavLink to="/admin">Profile</NavLink>
         </li>
       </ul>
     </aside>

@@ -1,9 +1,10 @@
 @charset 'utf-8';
 //@import './node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
-@import './BulmaOverridesPre.scss';
+@import './variables.scss';
+@import './bulma-overrides-pre.scss';
 @import './node_modules/bulma/bulma.sass';
-@import './BulmaOverridesPost.scss';
+@import './bulma-overrides-post.scss';
 
 html, body, #root {
   height: 100%;
@@ -19,12 +20,12 @@ body {
   // overflow-y: auto;
   //background-color: $white-ter;
 }
-.is-square {border-radius: 0}
 .bg-image {
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+.w-100 {width: 100%}
 .h-100 {height: 100%}
 
 main.login {
@@ -45,7 +46,12 @@ main.login {
     left: 0;
     height: 100%;
   }
-
+}
+main.admin {
+  .content-field {
+    padding: 30px;
+    background-color: $color-background-light;
+  }
 }
 
 // Import only what you need from Bulma

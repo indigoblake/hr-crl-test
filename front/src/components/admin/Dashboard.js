@@ -1,18 +1,24 @@
 import React from 'react'
+import { Summary } from '../../elements/Summary'
+import { Users } from '../../elements/Users'
 
-export class Dashboard extends React.Component {
-  render() {
-    return (
-      <div className="fsdfs">
-        <h1 className="title">Dashboard</h1>
-        <span class="icon">
-          <i class="fas fa-home"></i>
-        </span>
-        <span class="icon has-text-info">
-          <i class="fas fa-info-circle"></i>
-        </span>
-      </div>
-
-    );
-  }
+export const Dashboard = () => {
+  return (
+    <>
+      <section class="mb-2 hero has-background-white">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Dashboard
+            </h1>
+            <h2 class="subtitle">
+              Primary subtitle
+            </h2>
+          </div>
+        </div>
+      </section>
+      <Summary />
+      <Users />
+    </>
+  );
 }

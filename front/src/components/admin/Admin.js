@@ -8,20 +8,22 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 export const Admin = () => {
   return (
-    <>
+    <main className="admin">
+      <MainNav />
       <div className="container is-fluid">
-        <div className="columns is-gapless">
+        <div className="columns">
           <div className="column is-narrow">
             <SideNav />
           </div>
           <div className="column">
-            <MainNav />
-            <Route exact path="/admin/" component={ Dashboard } />
-            <Route path="/entries" component={ Entries } />
+            <div className="content-field">
+              <Route exact path="/admin/" component={ Dashboard } />
+              <Route path="/entries" component={ Entries } />
+            </div>
           </div>
         </div>
       </div>
       <Footer />
-    </>
+    </main>
   );
 }

@@ -3,55 +3,51 @@ import React from 'react';
 
 export const MainNav = () => {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
-        </a>
+    <div className="container is-fluid">
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+        <p class="title is-4">Title 1</p>
 
-        <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-          <a className="navbar-item">
-            Home
+          <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
+        </div>
 
-          <a className="navbar-item">
-            Documentation
-          </a>
-
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">
-              More
+        <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-start">
+            <a className="navbar-item">
+              Home
             </a>
 
-            <div className="navbar-dropdown">
-              <a className="navbar-item">
-                About
-              </a>
-            </div>
-          </div>
-        </div>
+            <a className="navbar-item">
+              Documentation
+            </a>
 
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <a className="button is-primary">
-                <strong>Sign up</strong>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">
+                More
               </a>
-              <a className="button is-light">
-                Log in
-              </a>
+
+              <div className="navbar-dropdown">
+                <a className="navbar-item">
+                  About
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <span class="icon is-medium">
+                <i class="far fa-bell fa-lg"></i>
+              </span>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
