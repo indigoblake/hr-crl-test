@@ -8,7 +8,7 @@ export const EmployeesTable = ({employees}) => {
           <th>ID</th>
           <th>Name</th>
           <th>Email</th>
-          <th>Company</th>
+          <th>Contractor Businesses</th>
           <th></th>
           <th></th>
         </tr>

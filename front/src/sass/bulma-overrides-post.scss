@@ -6,3 +6,10 @@
 .is-border-primary {
   border-left: 7px solid $primary
 }
+
+*[class*="is-decorate-border"] {
+  border-left: 7px solid transparent;
+
+}
+.is-decorate-border-primary {border-color: $primary;}
+.is-decorate-border-white {border-color: $white;}
