@@ -1,9 +1,8 @@
 
 .progress {border-radius: 5px}
 .is-gradient-main {
-  background: #1e5799;
-  background: -moz-linear-gradient(45deg, $primary 0%, #00dbef 100%);
-  background: -webkit-linear-gradient(45deg, $primary 0%,#00dbef 100%);
-  background: linear-gradient(45deg, $primary 0%,#00dbef 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#00dbef',GradientType=1 );
+  background: linear-gradient(45deg, darken($primary, 12%) 0%, $primary 100%);
+}
+.is-border-primary {
+  border-left: 7px solid $primary
 }

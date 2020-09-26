@@ -4,9 +4,12 @@ import React from 'react';
 export const SideNav = () => {
   return (
     <aside className="menu">
+      <figure class="image is-128x128">
+        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" />
+      </figure>
       <p className="menu-label">
         General
-        </p>
+      </p>
       <ul className="menu-list">
         <li>
           <NavLink to="/admin">Dashboard</NavLink>

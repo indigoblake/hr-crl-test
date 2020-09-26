@@ -26,7 +26,7 @@ export const UsersTable = ({users}) => {
                 <button className="button is-small is-primary">
                   <span>Sync entry</span>
                   <span className="icon is-small">
-                    <i className="fas fa-plus-circle"></i>
+                    <i class="fas fa-plus"></i>
                   </span>
                 </button>
               </td>

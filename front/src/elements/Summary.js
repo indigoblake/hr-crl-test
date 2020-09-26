@@ -4,33 +4,49 @@ import { UserContext } from '../contexts/UserContext';
 export const Summary = () => {
   const { users } = useContext(UserContext);
   return (
-    <div className="box">
-      <nav className="level">
-        <div className="level-item has-text-centered">
-          <div>
-            <p className="heading">Employees</p>
-            <p className="title">0</p>
+    <div className="columns">
+      <div className="column">
+        <div className="box is-gradient-main has-text-white">
+          <div className="columns">
+            <div className="column">
+              <p className="heading">Employees</p>
+              <p className="title has-text-white">0</p>
+            </div>
+            <div className="column has-text-right">
+              <span class="icon">
+                <i class="fas fa-spinner fa-pulse"></i>
+              </span>
+            </div>
           </div>
         </div>
-        <div className="level-item has-text-centered">
-          <div>
-            <p className="heading">Contractor Businesses</p>
-            <p className="title">0</p>
+      </div>
+      <div className="column">
+        <div className="box is-gradient-main has-text-white">
+          <p className="heading">Contractor Businesses</p>
+          <p className="title has-text-white">0</p>
+        </div>
+      </div>
+      <div className="column">
+        <div className="box is-gradient-main has-text-white">
+          <p className="heading">Not Synced Users</p>
+          <p className="title has-text-white">{ users.length }</p>
+        </div>
+      </div>
+      <div className="column">
+        <div className="box is-border-primary">
+          <div className="columns is-vcentered">
+            <div className="column">
+              <span class="icon is-large">
+                <i class="fab fa-alipay fa-3x"></i>
+              </span>
+            </div>
+            <div className="column">
+              <p className="heading">Employees</p>
+              <p className="title">0</p>
+            </div>
           </div>
         </div>
-        <div className="level-item has-text-centered">
-          <div>
-            <p className="heading">Not synced users</p>
-            <p className="title">{ users.length }</p>
-          </div>
-        </div>
-        <div className="level-item has-text-centered">
-          <div>
-            <p className="heading">Likes</p>
-            <p className="title">789</p>
-          </div>
-        </div>
-      </nav>
+      </div>
     </div>
   );
 }

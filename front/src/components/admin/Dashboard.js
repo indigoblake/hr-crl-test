@@ -28,8 +28,8 @@ export const Dashboard = () => {
   }
   return (
     <>
-      <section className="mb-2 hero has-background-white">
-        <div className="hero-body">
+      <section className="mb-2 hero">
+        <div className="hero-body px-0">
           <div className="container">
             <h1 className="title">
               Dashboard
