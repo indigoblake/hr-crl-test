@@ -4,9 +4,10 @@ import React from 'react';
 export const MainNav = () => {
   return (
     <div className="container is-fluid">
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav className="navbar has-background-transparent" role="navigation" aria-label="main navigation">
+
         <div className="navbar-brand">
-          <p className="title is-4">Title 1</p>
+
 
           <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>

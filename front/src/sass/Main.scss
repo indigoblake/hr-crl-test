@@ -48,9 +48,10 @@ main.login {
   }
 }
 main.admin {
+  background-color: $color-background-light;
   .content-field {
     padding: 30px;
-    background-color: $color-background-light;
+    //background-color: $color-background-light;
   }
 }
 
