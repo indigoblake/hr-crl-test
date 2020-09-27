@@ -4,8 +4,8 @@ import React from 'react';
 export const SideNav = () => {
   return (
     <aside className="menu">
-      <figure class="image is-128x128">
-        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" />
+      <figure className="image is-128x128">
+        <img className="is-rounded" src="https://bulma.io/images/placeholders/128x128.png" />
       </figure>
       <p className="menu-label">
         General

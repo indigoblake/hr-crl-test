@@ -60,4 +60,14 @@ export class EmployeeService {
 
     return mergedData;
   }
+
+  async createNewEmployee(name: string, email: string, company: string): Promise<Employees> {
+    const employee = new Employees();
+
+    employee.name = name;
+    employee.email = email;
+    employee.company = company;
+
+    return this.employeesRepository.save(employee);
+  }
 }

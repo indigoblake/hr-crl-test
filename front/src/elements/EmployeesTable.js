@@ -1,7 +1,8 @@
 import React from 'react'
 import { StatusIndicator } from './StatusIndicator'
 
-export const EmployeesTable = ({employees}) => {
+export const EmployeesTable = ({employees, handleEmployeeAdd}) => {
+  console.log(employees.length);
   return (
     <table className="table w-100">
       <thead>
@@ -24,10 +25,10 @@ export const EmployeesTable = ({employees}) => {
               <td>{employee.company}</td>
               <td>{employee.isSynced ? <StatusIndicator type="synced" /> : <StatusIndicator type="notSynced" />}</td>
               <td className="has-text-right">
-                <button className="button is-small is-primary">
+                <button className="button is-small is-primary" onClick={() => handleEmployeeAdd(employee.name, employee.email, employee.company) }>
                   <span>Sync entry</span>
                   <span className="icon is-small">
-                    <i class="fas fa-plus"></i>
+                    <i className="fas fa-plus"></i>
                   </span>
                 </button>
               </td>

@@ -3,25 +3,18 @@ import { Summary } from '../../elements/Summary'
 import { Employees } from '../../elements/Employees'
 import { EmployeeContext } from '../../contexts/EmployeeContext'
 
-
 export const Dashboard = () => {
   const { updateEmployees } = useContext(EmployeeContext);
   useEffect(() => {
     fetch('http://localhost:5000/api/employees/merged')
       .then(res => res.json())
-      .then(
-        (result) => {
-          //console.log(result)
-          updateEmployeeContext(result);
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-
-        }
+      .then(result => {
+        console.log(result)
+        updateEmployeeContext(result)
+      },
+        (error) => {}
       )
-  })
+  }, [])
 
   const updateEmployeeContext = (result) => {
     updateEmployees(result);
