@@ -5,29 +5,24 @@ export const Entries = () => {
     <div>
       <div className="entries box is-absolute">
         <table class="table w-100">
-          <thead>
-            <tr>
-              <th>Team</th>
-            </tr>
-          </thead>
           <tbody>
             <tr>
-              <td>fsfsdf</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus quos culpa</td>
+              <td>
+                <span class="tag is-danger is-light">Danger</span>
+              </td>
             </tr>
             <tr>
-              <td>fsfsdf</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus quos culpa</td>
+              <td>
+                <span class="tag is-danger is-light">Danger</span>
+              </td>
             </tr>
             <tr>
-              <td>fsfsdf</td>
-            </tr>
-            <tr>
-              <td>fsfsdf</td>
-            </tr>
-            <tr>
-              <td>fsfsdf</td>
-            </tr>
-            <tr>
-              <td>fsfsdf</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus quos culpa</td>
+              <td>
+                <span class="tag is-danger is-light">Danger</span>
+              </td>
             </tr>
           </tbody>
         </table>
