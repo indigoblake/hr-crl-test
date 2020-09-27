@@ -1,6 +1,5 @@
 import React from 'react'
 import { Dashboard } from './Dashboard'
-import { Entries } from './Entries'
 import { MainNav } from '../../elements/MainNav'
 import { SideNav } from '../../elements/SideNav'
 import { Footer } from '../../elements/Footer'
@@ -18,7 +17,6 @@ export const Admin = () => {
             <MainNav />
             <div className="content-field">
               <Route exact path="/admin/" component={ Dashboard } />
-              <Route path="/entries" component={ Entries } />
             </div>
           </div>
         </div>

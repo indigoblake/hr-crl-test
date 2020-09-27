@@ -10,16 +10,16 @@ export const SideNav = () => {
       <ul className="menu-list">
         <li>
           <NavLink to="/admin" className="is-active">
-            <span class="icon pr-2">
-              <i class="fas fa-columns"></i>
+            <span className="icon pr-2">
+              <i className="fas fa-columns"></i>
             </span>
             Dashboard
           </NavLink>
         </li>
         <li>
           <NavLink to="/admin">
-            <span class="icon pr-2">
-              <i class="fas fa-list-ul"></i>
+            <span className="icon pr-2">
+              <i className="fas fa-list-ul"></i>
             </span>
             Entries
           </NavLink>
@@ -30,8 +30,8 @@ export const SideNav = () => {
         </li>
         <li>
           <NavLink to="/admin">
-            <span class="icon pr-2">
-              <i class="fas fa-id-badge"></i>
+            <span className="icon pr-2">
+              <i className="fas fa-id-badge"></i>
             </span>
             Profile
           </NavLink>

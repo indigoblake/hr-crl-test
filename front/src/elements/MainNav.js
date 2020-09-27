@@ -3,7 +3,7 @@ import React from 'react';
 
 export const MainNav = () => {
   return (
-    <div className="container is-fluid">
+    <div className="nav-container container is-fluid">
       <nav className="navbar has-background-transparent" role="navigation" aria-label="main navigation">
 
         <div className="navbar-brand">

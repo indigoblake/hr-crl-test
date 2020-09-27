@@ -54,17 +54,21 @@ main.admin {
     //background-color: $color-background-light;
   }
   .entries {
-    top: 70px;
+    display: none;
+    top: 60px;
     right: 60px;
     max-width: 40%;
     max-height: 250px;
     overflow-y: auto;
     z-index: 1;
-
   }
   .entries::-webkit-scrollbar {
     display: none;
   }
+  .nav-container:hover {
+    & + .content-field .entries {display: block;}
+  }
+  .entries:hover {display: block;}
 }
 
 // Import only what you need from Bulma
