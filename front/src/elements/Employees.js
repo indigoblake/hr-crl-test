@@ -28,40 +28,16 @@ export const Employees = () => {
     updateEmployees([...newEmployeesList]);
   }
 
-
-
-  // const handleEmployeeAdd = (employeeId) => {
-  //   const requestOptions = {
-  //       method: 'POST',
-  //       mode: 'no-cors', // no-cors, *cors, same-origin
-  //       //cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-  //       //credentials: 'same-origin', // include, *same-origin, omit
-  //       headers: {'Content-Type': 'application/json'},
-  //       body: JSON.stringify({name: 'hallo!!!!!!', email: 'fsfsdf', company: 'fsdfsdffsdf'})
-  //   };
-  //   fetch('http://localhost:5000/api/employees', requestOptions)
-  //     .then(res => console.log(res))
-  //     .then(res => res.json())
-  //     .then(result => {
-  //         console.log(result)
-  //         updateEmployees(result);
-  //       },
-  //       // Note: it's important to handle errors here
-  //       // instead of a catch() block so that we don't swallow
-  //       // exceptions from actual bugs in components.
-  //       (error) => {}
-  //     )
-  // }
-
-
   return (
     <>
-      <p className="title is-3">
-          Employees
-      </p>
-      <p className="subtitle is-5">
-          Sample data from third party source
-      </p>
+      <div className="block mt-5 mb-4">
+        <p className="title is-4">
+            Employees
+        </p>
+        <p className="subtitle is-5">
+            Sample data from third party source
+        </p>
+      </div>
       <div className="box">
         <EmployeesTable employees={ employees } handleEmployeeAdd={ handleEmployeeAdd }/>
       </div>

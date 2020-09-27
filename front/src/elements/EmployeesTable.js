@@ -2,7 +2,6 @@ import React from 'react'
 import { StatusIndicator } from './StatusIndicator'
 
 export const EmployeesTable = ({employees, handleEmployeeAdd}) => {
-  console.log(employees.length);
   return (
     <table className="table w-100">
       <thead>

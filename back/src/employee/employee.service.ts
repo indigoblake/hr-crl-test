@@ -23,7 +23,7 @@ export class EmployeeService {
     return response.data;
   }
 
-  async getMergedEmployees(): Promise<any> {
+  async getMergedEmployees(): Promise<Employees> {
     const employeesTpList = [
       {id: 1, name: 'Leanne Graham', email: 'Sincere@april.biz', company: 'Romaguera'},
       {id: 2, name: 'Ervin Howell', email: 'Shanna@melissa.tv', company: 'Deckow'},
@@ -38,7 +38,6 @@ export class EmployeeService {
       {id: 11, name: 'Anna Smith', email: 'annasmith@rebel.io', company: 'Rebel'}
     ];
     const employeesHrList = this.employeesRepository.find();
-
     const merged = this.mergeDataFromDifferentSources(employeesTpList, await employeesHrList);
 
     return merged;
@@ -63,7 +62,6 @@ export class EmployeeService {
 
   async createNewEmployee(name: string, email: string, company: string): Promise<Employees> {
     const employee = new Employees();
-
     employee.name = name;
     employee.email = email;
     employee.company = company;

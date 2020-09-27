@@ -6,7 +6,7 @@ export const EmployeeContextProvider = (props) => {
   const [employees, setEmployees] = useState([])
 
   const updateEmployees = (employees) => {
-    setEmployees(employees);
+    setEmployees(employees)
   }
 
   return (
