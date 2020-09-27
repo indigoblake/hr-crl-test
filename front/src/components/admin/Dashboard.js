@@ -2,9 +2,11 @@ import React, { useEffect, useContext } from 'react'
 import { Summary } from '../../elements/Summary'
 import { Employees } from '../../elements/Employees'
 import { EmployeeContext } from '../../contexts/EmployeeContext'
+import { Entries } from '../../elements/Entries'
 
 export const Dashboard = () => {
   const { updateEmployees } = useContext(EmployeeContext);
+
   useEffect(() => {
     fetch('http://localhost:5000/api/employees/merged')
       .then(res => res.json())
@@ -33,6 +35,7 @@ export const Dashboard = () => {
           </div>
         </div>
       </section>
+      <Entries />
       <Summary />
       <Employees />
     </>

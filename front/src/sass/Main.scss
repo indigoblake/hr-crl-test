@@ -53,6 +53,17 @@ main.admin {
     padding: 30px;
     //background-color: $color-background-light;
   }
+  .entries {
+    top: 20px;
+    right: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1;
+
+  }
+  .entries::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 // Import only what you need from Bulma

@@ -1,5 +1,7 @@
 
 .progress {border-radius: 5px}
+.is-fixed {position: fixed !important;}
+.is-absolute {position: absolute !important;}
 .is-gradient-main {
   background: linear-gradient(45deg, darken($primary, 18%) 0%, $primary 100%);
 }
