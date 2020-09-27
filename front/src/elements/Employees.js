@@ -10,7 +10,7 @@ export const Employees = () => {
           Employees
       </p>
       <p className="subtitle is-5">
-          Sample data from third party source.
+          Sample data from third party source
       </p>
       <div className="box">
         <EmployeesTable employees={ employees } />

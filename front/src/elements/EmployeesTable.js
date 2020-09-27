@@ -1,4 +1,5 @@
 import React from 'react'
+import { StatusIndicator } from './StatusIndicator'
 
 export const EmployeesTable = ({employees}) => {
   return (
@@ -20,8 +21,8 @@ export const EmployeesTable = ({employees}) => {
               <td>{employee.id}</td>
               <td>{employee.name}</td>
               <td>{employee.email}</td>
-              <td>{employee.company.name}</td>
-              <td></td>
+              <td>{employee.company}</td>
+              <td>{employee.isSynced ? <StatusIndicator type="synced" /> : <StatusIndicator type="notSynced" />}</td>
               <td className="has-text-right">
                 <button className="button is-small is-primary">
                   <span>Sync entry</span>

@@ -9,5 +9,8 @@ export class Employees {
   name: string;
 
   @Column()
+  email: string;
+
+  @Column()
   company: string;
 }

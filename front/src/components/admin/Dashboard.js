@@ -7,7 +7,7 @@ import { EmployeeContext } from '../../contexts/EmployeeContext'
 export const Dashboard = () => {
   const { updateEmployees } = useContext(EmployeeContext);
   useEffect(() => {
-    fetch('http://localhost:5000/api/employees/tp')
+    fetch('http://localhost:5000/api/employees/merged')
       .then(res => res.json())
       .then(
         (result) => {

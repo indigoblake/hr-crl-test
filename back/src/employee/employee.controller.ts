@@ -11,6 +11,12 @@ export class EmployeeController {
     return this.employeeService.getThirdPartyEmployees()
   }
 
+  @Get('merged')
+  @Header('Access-Control-Allow-Origin', '*')
+  getMergedEmployees() {
+    return this.employeeService.getMergedEmployees()
+  }
+
   @Get('db')
   findAll() {
     return this.employeeService.findAll()
